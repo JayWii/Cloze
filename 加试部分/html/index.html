@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>百词斩附加题</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../css/style-extra.css" />
+</head>
+<body>
+  <header>
+      <div class="container">
+          <h1>加试题__选词填空题目录入页面</h1>
+          <a href="./excise-page.html">
+            <button>去做题界面（必做题）</button>
+          </a>
+      </div>
+  </header>
+  <div class="main-wrap container">
+    <!-- 第一步 -->
+     <div class="step1">
+       <h3>第一步：在下方输入框内输入完整的题目原文（不包含填空处）</h3>
+       <textarea class="article-input"></textarea>
+       <button class="next">下一步</button>
+     </div>
+
+     <!-- 第二步 -->
+     <div class="step2">
+       <h3>第二步：在下方点击选出需要作为填空项的单词（重复点击可取消选择）</h3>
+       <div class="words-table"><div class="placeholder">请先完成第一步</div></div>
+       <button class="next">下一步</button>
+     </div>
+
+     <!-- 第三步 -->
+     <div class="step3">
+       <h3>第三步：再添加几个额外的选项（混淆项）(点击选项即可将其删除)</h3>
+       <div class="got-options">
+         <h4>已选填空项：</h4>
+         <div class="options-table"></div>
+       </div>
+       <div class="extra">
+         <input type="text" class="extra-input"><button class="add-extra-option">添 加</button>
+       </div>
+       <div class="extra-options"></div>
+       <button class="next">下一步</button>
+     </div>
+
+     <!-- 第四步 -->
+     <div class="step4">
+       <h3>第四步：为每个正确答案添加基本文字解析(绿色按钮为已添加过)</h3>
+       <div class="answers"></div>
+       <div class="keys-input">
+         <textarea name="name" rows="8" cols="40" class="key-input"></textarea>
+         <button class="add-key">添  加</button>
+       </div>
+     </div>
+
+     <button class="submit">提交</button>
+
+  </div>
+
+  <script src="../js/jquery.min.js" charset="utf-8"></script>
+  <script src="../js/extra-page.js" charset="utf-8"></script>
+</body>
+</html>
